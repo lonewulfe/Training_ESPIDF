@@ -122,8 +122,9 @@ void app_main()
     
 #elif DIGITAL_INPUT
 
-// GPIO_0 / PIN 6 is the switch connected pin.
-// Pull up resistor
+// GPIO_34 was used as the pin for it to work
+// Internal pull up resistors were used
+// Note: GPIO_0 is used for reset
 
     gpio_config_t io_conf={
         .pin_bit_mask=(1ULL << BUTTON_PIN),
